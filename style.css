@@ -1,26 +1,57 @@
-#game{
+html,
+body {
+    min-height: 100vh;
+    min-width: 100vw;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#game {
     width: 500px;
     height: 200px;
     border: 1px solid black;
+    border-radius: 5px;
     margin: auto;
+    background-color: lightblue;
+    box-shadow: black;
 }
-#character{
+
+#character {
     width: 20px;
     height: 50px;
     background-color: red;
     position: relative;
-    top: 150px; 
+    top: 150px;
 }
-@keyframes jump{
-    0%{top: 150px;}
-    30%{top: 100px;}
-    70%{top: 100px;}
-    100%{top: 150px;}
+
+h2,
+h3,
+h4 {
+    text-align: center;
+    font-size: 1.5rem;
 }
-.animate{
+
+@keyframes jump {
+    0% {
+        top: 150px;
+    }
+    30% {
+        top: 100px;
+    }
+    70% {
+        top: 100px;
+    }
+    100% {
+        top: 150px;
+    }
+}
+
+.animate {
     animation: jump 300ms linear;
 }
-#block{
+
+#block {
     width: 20px;
     height: 20px;
     background-color: blue;
@@ -29,7 +60,12 @@
     left: 480px;
     animation: block 1s infinite linear;
 }
-@keyframes block{
-    0%{left: 500px}
-    100%{left: -20px}
+
+@keyframes block {
+    0% {
+        left: 500px
+    }
+    100% {
+        left: -20px
+    }
 }
