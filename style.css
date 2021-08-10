@@ -56,10 +56,13 @@ h4 {
     width: 32px;
     height: 20px;
     background-color: brown;
+    border-top: black;
+    rotate: 360;
     position: relative;
     top: 130px;
     left: 480px;
     animation: block 1.5s infinite linear;
+    border-radius: 50px;
 }
 
 @keyframes block {
